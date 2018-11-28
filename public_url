@@ -1,0 +1,2 @@
+ #!/bin/sh
+ curl -s localhost:4040/api/tunnels | jq -r .tunnels[1].public_url

@@ -13,6 +13,8 @@ RUN set -x \
 # Add config script.
 COPY ngrok.yml /home/ngrok/.ngrok2/
 COPY entrypoint.sh /
+ADD public_url /
+RUN chmod +x /public_url
 
 USER ngrok
 ENV USER=ngrok
