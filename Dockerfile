@@ -3,7 +3,7 @@ MAINTAINER Werner Beroux <werner@beroux.com>
 
 RUN set -x \
     # Install ngrok (latest official stable from https://ngrok.com/download).
- && apk add --no-cache curl \
+ && apk add --no-cache curl jq \
  && curl -Lo /ngrok.zip https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip \
  && unzip -o /ngrok.zip -d /bin \
  && rm -f /ngrok.zip \
